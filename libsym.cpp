@@ -1,6 +1,6 @@
 #include "libsym.h"
 
-#include "platform/types.h"
+#include "types.h"
 
 #ifdef _WIN32
 
