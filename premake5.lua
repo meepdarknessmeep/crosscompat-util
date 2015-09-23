@@ -1,1 +1,2 @@
+files "libsym.cpp"
 includedirs "."
