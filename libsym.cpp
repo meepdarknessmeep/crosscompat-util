@@ -52,8 +52,8 @@ int lib_open_callback(struct dl_phdr_info *info, size_t size, void *data)
 
         if(strcmp(info->dlpi_name + len - strlen(stru->name), stru->name) == 0)
         {
-        stru->lib = dlopen(info->dlpi_name, RTLD_LAZY);
-        return 1;
+            stru->lib = dlopen(info->dlpi_name, RTLD_LAZY);
+            return 1;
         }
     }
     else if(stru->type == 1) // get base
